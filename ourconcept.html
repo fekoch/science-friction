@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Science Friction</title>
+        <meta name="description" content="The biological and universal Rubber">
+        <meta name="author" content="Felix Koch, Benjamin Kürmayr, Timon Ring">
+        <link rel="shortcut icon" href="img/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="not-home ourconcept">
+        <div class="preloader">
+            <img class="preloader" style="width: 100px;height: 100px;position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index:99999999;" src="img/loading.gif">
+        </div>        
+        <div id="body_wrapper">
+            <header>
+                <div class="header_wrapper">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html" class="nav_logo"><img src="img/logo.svg"/></a></li>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html" class="active"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar_bg">                   
+                        <a href="index.html" class="nav_logo mobile"><img src="img/logo.svg"/></a>
+                        <div class="toggle-btn" id="toggle-btn" onclick="showSidebar()">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar" id="sidebar">
+                        <a onclick="showSidebar()" class="close-btn btn"><span class="text-wrap">X Close Menu</span></a>
+                        <ul>
+                            <br><br>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html" class="active"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="uparrow nextsection grow" id="uparrow" onclick="upScrollIt()">
+                        <svg style="transform:rotate(180deg);margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                        </svg>
+                </div>
+                <div class="downarrow nextsection grow" id="downarrow" onclick="downScrollIt()">
+                    <svg style="margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                        <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                    </svg>
+                </div>
+                <div class="main_wrapper">
+                    <div class="layout_section">
+                        <div class="inner_section">
+                            <div class="aboutus">
+                                <br><br>
+                                <h1 class="bigger_h1">About Science-Friction</h1>
+                                <div class="firstHalf">
+                                    <p class="introductionP">         
+                                        Science-Friction is a upcoming Startup founded in 2016. They have specialised theirselfs on producing sustainable, biodegrable and multifunctional erasers.
+                                    </p>
+                                    <div class="firstHalf">
+                                        <p>
+                                            Timon Ring the Founder and CEO of Science-Friction started this Company, because he noticed the changes that climate change can make. As an technician himself
+                                            he used a lot of erasers for his technicial drawings. That's how he, after some research, came up with the idea of creating sustainable rubbers. Since the 
+                                            Science-Friction Company was founded, Timon and his Team have sold more than<br> 0.8 Million erasers worldwide and their vendings still are getting more.
+                                        </p>
+                                    </div>
+                                    <div class="secondHalf">
+                                        <p>
+                                            Science-Friction offers a sortiment of two very unique rubbers. On the one Hand they provide their multifunctional, <a href="products.html#eco"><em><u>"ecological rubber"</u></em></a> which suits best for any kind of 
+                                            writing or drawing you want to erase. On the other Hand the Company also offers a eraser, especially designed for technicians and architects, or just for
+                                            people that need to be precise with their drawings - <a href="products.html#precision"><em><u>"the precision rubber"</u></em></a>. Both of their special products of course are produced as green and fair as possible.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="secondHalf">
+                                    <img src="img/Chaos.jpg"/>
+                                </div>
+                                <div class="fullwidth">
+                                    <h1 class="bigger_h1 center concept-h1s">Sustainable. Fairtrade. Multifunctional.</h1>
+                                    <br><br>
+                                    <div class="sf_trailer">
+                                        <video id="sf_animation" poster="img/poster.jpg" oncanplay="whereInVid()">
+                                            <source src="img/trailer.mp4" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                        <div id="currentTime"></div>
+                                        <button id="playPause" onclick="playPause()"><i class="fas fa-pause-circle" id="pauseIcon"></i><i id="playIcon" class="fas fa-play-circle"></i></button> 
+                                        <button id="restart" onclick="restart()"><i class="fas fa-undo"></i></button> 
+                                        <br><br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timonsTestimonial">
+                                <div class="centerV">
+                                    <p style="color:#fff; font-family:'Finger Paint'; text-align: center;margin:0 auto;width: 90%;">"In a world where climate change gets a more important topic than ever, I want to contribute my part to a greener world with our Science-Friction rubbers."</p>
+                                    <div class="headshot timon">
+                                        <span style="color: #778C47; font-family:'Finger Paint';">Timon Ring</span>
+                                        <span  style="color:#fff; font-family:'Finger Paint';">CEO of Science-Friction</span>
+                                    </div>
+                                    <span style="color: #778C47; font-family:'Finger Paint';" class="center">Timon Ring</span>
+                                    <span  style="color:#fff; font-family:'Finger Paint';" class="center">CEO of Science-Friction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="footer_wrapper">
+                <footer>
+                    <div class="inner_footer">
+                        <div class="widget_section_wrapper">
+                            <ul class="widget_section">
+                                <li class="widget-1">
+                                    <p>Social media</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" width="50px" height="auto" alt="facebook-icon" src="img/facebook.svg"/></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img width="50px" height="auto" alt="twitter-icon" style="-webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px;" src="img/twitter-logo-button.svg"/></a></li>
+                                        <li><a href="https://www.google.com" target="_blank"><img width="50px" height="auto" alt="google-plus-icon" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" src="img/google-plus.gif"/></a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-2">
+                                    <p>Links</p>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="products.html">About us</a></li>
+                                        <li><a href="ourteam.html">Our Team</a></li>
+                                        <li><a href="ourconcept.html">Our Concept</a></li>
+                                        <li><a href="applyNow.html">Jobs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-3">
+                                    <p>Contact</p>
+                                    <ul>    
+                                        <form action="javascript:getInTouch()">
+                                            <li><input type="email" required id="getInTouchText" placeholder="Email-Address"></input></li>
+                                            <li><button type="submit" id="getInTouch">Get in Touch</button>
+                                        </form>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <div class="center">
+                                    <p class="footer_bottom_p" style="font-family: Finger Paint;">Science-Friction GmbH 2018 © All rights reserved</p>
+                                    <p class="footer_bottom_p"><a href="imprint-and-privacy-policy.html">Imprint</a>|<a href="imprint-and-privacy-policy.html">Privacy Policy</a>|<a href="contact.html">Contact</a></p>        
+                            </div>
+                        </div>
+                    </div>
+                </footer> 
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Science Friction</title>
+        <meta name="description" content="The biological and universal Rubber">
+        <meta name="author" content="Felix Koch, Benjamin Kürmayr, Timon Ring">
+        <link rel="shortcut icon" href="img/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="not-home page-id-4">
+        <div class="preloader">
+            <img class="preloader" style="width: 100px;height: 100px;position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index:99999999;" src="img/loading.gif">
+        </div>
+        <div id="body_wrapper">
+            <header>
+                <div class="header_wrapper">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html" class="nav_logo"><img src="img/logo.svg"/></a></li>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html" class="active"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar_bg">                   
+                        <a href="index.html" class="nav_logo mobile"><img src="img/logo.svg"/></a>
+                        <div class="toggle-btn" id="toggle-btn" onclick="showSidebar()">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar" id="sidebar">
+                        <a onclick="showSidebar()" class="close-btn btn"><span class="text-wrap">X Close Menu</span></a>
+                        <ul>
+                            <br><br>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"  class="active"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="uparrow nextsection grow" id="uparrow" onclick="upScrollIt()">
+                        <svg style="transform:rotate(180deg);margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                        </svg>
+                </div>
+                <div class="downarrow nextsection grow" id="downarrow" onclick="downScrollIt()">
+                    <svg style="margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                        <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                    </svg>
+                </div>
+                <div class="main_wrapper">
+                    <section class="layout_section section_nr1">
+                        <div class="inner_section inner_section_first">
+                            <div class="header_heading">
+								<h1>We are the people behind Science-Friction.</h1>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="layout_section section_nr3">
+                        <div class="inner_section">
+                            <div class="ourTeam_wrapper">
+                                <div id="ourTeam">
+                                    <h1 class="first_h1 center">Our Team</h1>
+                                    <div class="oneThird first">
+                                        <div class="text-block-with-icon">
+                                            <div class="headshot felix center"><div>ISO: 100<br>S:1/33s<br>F:1,9<br>Brennweite:3,6mm </div></div>
+                                            <h1 class="center name">Felix Koch</h1>
+                                            <h1 class="subheading job center">Head Scientist</h1>
+                                            <p class="center">
+                                                As head scientist Felix Koch is responsible for the chemical composition of our erasers. On his travels in faraway countries, he found out about the use of natural rubber as erasers. After some research, Felix Koch discovered the secret formula to create a special rubber, which fits perfectly for erasing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="oneThird second">
+                                        <div class="text-block-with-icon">
+                                            <div class="headshot timon center"><div>ISO: 100<br>S:1/33s<br>F:1,9<br>Brennweite:3,6mm </div></div>
+                                            <h1 class="center name">Timon Ring</h1>
+                                            <h1 class="subheading job center">CEO of Science-Friction</h1>
+                                            <p class="center">
+                                                Timon Ring was working in an eraser factory when he discovered the terrible truth about conventional erasers. So, he took initiative and founded a campaign against the poisonous contents. While managing the campaign, he met Felix Koch, who told him about his discovery. When he heard about the great properties,
+                                                 Timon used his insight knowledge of the rubber industry to start his own business.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="oneThird third">
+                                        <div class="text-block-with-icon">
+                                            <div class="headshot ben center"><div>ISO: 100<br>S:1/33s<br>F:1,9<br>Brennweite:3,6mm </div></div>
+                                            <h1 class="center name">Benjamin Kürmayr</h1>
+                                            <h1 class="subheading job center">Markting Manager</h1>
+                                            <p class="center">
+                                                Everything about marketing and online-marketing is Benjamin's job. He works closely
+                                                with the webdevelopement team to enable our online shopping platform.  
+                                                He also manages our advertisement in the media and other platforms. 
+                                                As marketing manager Benjamin is determined about making our great product known.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+					<section class="layout_section section_nr4">
+                        <div class="inner_section">
+                            <div id="call2action">
+                                <div class="call2action_text">
+                                    <h1>Looking for a job?</h1><br><br>
+                                    <h2>We need <b>regional managers</b> and <b>junior scientists</b></h2>
+                                </div>
+                                <div class="call2action_btn">
+                                    <br><br>
+                                    <a href="applyNow.html" class="read-more call2action">Apply now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <div class="footer_wrapper">
+                <footer>
+                    <div class="inner_footer">
+                        <div class="widget_section_wrapper">
+                            <ul class="widget_section">
+                                <li class="widget-1">
+                                    <p>Social media</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" width="50px" height="auto" alt="facebook-icon" src="img/facebook.svg"/></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img width="50px" height="auto" alt="twitter-icon" style="-webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px;" src="img/twitter-logo-button.svg"/></a></li>
+                                        <li><a href="https://www.google.com" target="_blank"><img width="50px" height="auto" alt="google-plus-icon" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" src="img/google-plus.gif"/></a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-2">
+                                    <p>Links</p>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="products.html">About us</a></li>
+                                        <li><a href="ourteam.html">Our Team</a></li>
+                                        <li><a href="ourconcept.html">Our Concept</a></li>
+                                        <li><a href="applyNow.html">Jobs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-3">
+                                    <p>Contact</p>
+                                    <ul>    
+                                        <form action="javascript:getInTouch()">
+                                            <li><input type="email" required id="getInTouchText" placeholder="Email-Address"></input></li>
+                                            <li><button type="submit" id="getInTouch">Get in Touch</button>
+                                        </form>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <div class="center">
+                                    <p class="footer_bottom_p" style="font-family: Finger Paint;">Science-Friction GmbH 2018 © All rights reserved</p>
+                                    <p class="footer_bottom_p"><a href="imprint-and-privacy-policy.html">Imprint</a>|<a href="imprint-and-privacy-policy.html">Privacy Policy</a>|<a href="contact.html">Contact</a></p>        
+                            </div>
+                        </div>
+                    </div>
+                </footer> 
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Science Friction</title>
+        <meta name="description" content="The biological and universal Rubber">
+        <meta name="author" content="Felix Koch, Benjamin Kürmayr, Timon Ring">
+        <link rel="shortcut icon" href="img/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="is-home" onload="showPopup();">
+        <div class="preloader">
+            <img class="preloader" style="width: 100px;height: 100px;position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index:99999999;" src="img/loading.gif">
+        </div>
+        <div id="body_wrapper">
+            <header>
+                <div class="header_wrapper">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html" class="nav_logo"><img alt="Logo" src="img/logo.svg"/></a></li>
+                            <li><a href="index.html" class="active"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar_bg">                   
+                        <a href="index.html" class="nav_logo mobile"><img alt="Logo" src="img/logo.svg"/></a>
+                        <div class="toggle-btn" id="toggle-btn" onclick="showSidebar()">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar" id="sidebar">
+                        <a onclick="showSidebar()" class="close-btn btn"><span class="text-wrap">X Close Menu</span></a>
+                        <ul>
+                            <br><br>
+                            <li><a href="index.html"  class="active"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="uparrow nextsection grow" id="uparrow" onclick="upScrollIt()">
+                        <svg style="transform:rotate(180deg);margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                        </svg>
+                </div>
+                <div class="downarrow nextsection grow" id="downarrow" onclick="downScrollIt()">
+                    <svg style="margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                        <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                    </svg>
+                </div>
+                <div class="main_wrapper">
+                    <section class="layout_section section_nr1">
+                        <div class="inner_section">
+                            <div class="header_heading">
+                                    <h1 class="basic_h1">SCIENCE FRICTION - EREASE WITH EASE</h1>
+                                    <h4 style="font-weight:bold;color:#fff;font-size:15pt;">
+                                        I buy my rubbers at Science-Friction because they rub nicely ~ Albert Einstein</h4>
+                                    <br><br>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="layout_section section_nr2">
+                            <div class="inner_section">
+                                <div class="triangle_sec ourProducts_wrapper">
+                                    <div id="ourProducts">
+                                        <div class="firstHalf">
+                                            <div class="icon_our_product">
+                                            </div>
+                                        </div>
+                                        <div class="secondHalf">
+                                            <div class="our_product">
+                                                <h1 class="basic_h1">Our Product</h1>
+                                                <p>
+                                                    Not only is the Science-Friction Rubber produced ecologically but also it provides
+                                                    multifunctionality and unversality. Due to it's special "Science-Friction" Formula
+                                                    invented by our Head Scientist Felix Koch you can erase normal pencils
+                                                    aswell as felt pens with this rubber.
+                                                    Because we care about our workers we are commited to produce our products according 
+                                                    to the Fairtrade standards.
+                                                </p>
+                                                <p>
+                                                    By buying our product you support caoutchouc farmers in indonesia and you help
+                                                    keeping the world a greener place. The enviromental health is very important to us,
+                                                    which is why we only use untreated and biodegradable, natural rubber for our products.
+                                                    If you now want to know more about our products click the button below :)  
+                                                </p>
+                                                <br>
+                                                <a href="products.html" class="read-more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="layout_section section_nr3">
+                        <div class="inner_section">
+                            <div class="ourConcept_wrapper">
+                                <div id="ourConcept">
+                                    <div class="oneThird first">
+                                        <div class="text-block-with-icon">
+                                            <img src="img/sustainable.png" class="concept-icon" alt="concept icon"/>
+                                            <h1 class="basic_h1 center name">Sustainability</h1>
+                                            <p class="center">
+                                                We are commited to keeping our production and products as green as possible. 
+                                                Furthermore our Scientists have developed a special process which enables us to
+                                                produce our rubbers with less CO2-Emissions. If you want mother earth's future
+                                                to be a green one, buy yourself a brandnew "Science-Friction" rubber.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="oneThird second">
+                                        <div class="text-block-with-icon">
+                                            <img src="img/fairtrade_985.png" class="concept-icon" alt="concept icon"/>
+                                            <h1 class="basic_h1 center name">Fairtrade</h1>
+                                            <p class="center">
+                                                Because we care alot about our workers we treat our rubber farmers in indonesia
+                                                according to the "Fairtrade"-standards. By buying our rubber you ensure that 
+                                                rubber farmers get a fair price for their work. With you only paying a little bit more,
+                                                "Fairtrade"-projects like schools in poor areas can be realised.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="oneThird third">
+                                        <div class="text-block-with-icon">
+                                            <img src="img/multifunctional.png" class="concept-icon center" alt="concept icon"/>
+                                            <h1 class="basic_h1 center name">Multifunctional</h1>
+                                            <p class="center">
+                                                Not only can you erase normal pencils with the Science-Friction rubbers but also felt
+                                                pens and any other coloured pencils. Our rubbers are produced using a special formula invented by 
+                                                our head scientist Felix Koch. This formula enables a eco-friendly production and the universal 
+                                                character of our rubbers.
+
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div style="width:120px;clear:both;margin:0 auto">
+                                        <a href="ourconcept.html" class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="layout_section section_nr4">
+                        <div class="inner_section">
+                            <div id="call2action">
+                                <div class="call2action_text">
+                                    <h1>Interested in our Product?</h1><br><br>
+                                    <h2>Then get in touch with us and buy yourself a wonderful Science-Friction rubber.</h2>
+                                </div>
+                                <div class="call2action_btn">
+                                    <br><br>
+                                    <a href="contact.html?subjectURL=I%20want%20to%20buy%20the%20ecological%20rubber!&buy=true&productid=1" class="read-more call2action">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <div class="footer_wrapper">
+                <footer>
+                    <div class="inner_footer">
+                        <div class="widget_section_wrapper">
+                            <ul class="widget_section">
+                                <li class="widget-1">
+                                    <p>Social media</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" width="50px" height="auto" alt="facebook-icon" src="img/facebook.svg"/></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img width="50px" height="auto" alt="twitter-icon" style="-webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px;" src="img/twitter-logo-button.svg"/></a></li>
+                                        <li><a href="https://www.google.com" target="_blank"><img width="50px" height="auto" alt="google-plus-icon" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" src="img/google-plus.gif"/></a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-2">
+                                    <p>Links</p>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="products.html">About us</a></li>
+                                        <li><a href="ourteam.html">Our Team</a></li>
+                                        <li><a href="ourconcept.html">Our Concept</a></li>
+                                        <li><a href="applyNow.html">Jobs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-3">
+                                    <p>Contact</p>
+                                    <ul>    
+                                        <form action="javascript:getInTouch()">
+                                            <li><input type="email" required id="getInTouchText" placeholder="Email-Address"></input></li>
+                                            <li><button type="submit" id="getInTouch">Get in Touch</button>
+                                        </form>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <div class="center">
+                                    <p class="footer_bottom_p" style="font-family: Finger Paint;">Science-Friction GmbH 2018 © All rights reserved</p>
+                                    <p class="footer_bottom_p"><a href="imprint-and-privacy-policy.html">Imprint</a>|<a href="imprint-and-privacy-policy.html">Privacy Policy</a>|<a href="contact.html">Contact</a></p>        
+                            </div>
+                        </div>
+                    </div>
+                </footer> 
+            </div>
+        </div>
+    </body>
+</html>

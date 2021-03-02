@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Science Friction</title>
+        <meta name="description" content="The biological and universal Rubber">
+        <meta name="author" content="Felix Koch, Benjamin Kürmayr, Timon Ring">
+        <link rel="shortcut icon" href="img/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="not-home page-id-5" onload="showPopup(); getTestimonials();">
+        <div class="preloader">
+            <img class="preloader" style="width: 100px;height: 100px;position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index:99999999;" src="img/loading.gif">
+        </div>        
+        <div id="body_wrapper">
+            <header>
+                <div class="header_wrapper">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html" class="nav_logo"><img src="img/logo.svg"/></a></li>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html" class="active"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html" ><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar_bg">                   
+                        <a href="index.html" class="nav_logo mobile"><img src="img/logo.svg"/></a>
+                        <div class="toggle-btn" id="toggle-btn" onclick="showSidebar()">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar" id="sidebar">
+                        <a onclick="showSidebar()" class="close-btn btn"><span class="text-wrap">X Close Menu</span></a>
+                        <ul>
+                            <br><br>
+                            <li><a href="index.html"><span class="text-wrap">Home</span></a></li>
+                            <li><a href="products.html" class="active"><span class="text-wrap">Products</span></a></li>
+                            <li><a href="ourconcept.html"><span class="text-wrap">Our Concept</span></a></li>
+                            <li><a href="ourteam.html"><span class="text-wrap">Our Team</span></a></li>
+                            <li><a href="contact.html"><span class="text-wrap">Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="uparrow nextsection grow" id="uparrow" onclick="upScrollIt()">
+                        <svg style="transform:rotate(180deg);margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                        </svg>
+                </div>
+                <div class="downarrow nextsection grow" id="downarrow" onclick="downScrollIt()">
+                    <svg style="margin-left:9.5px;margin-top:14px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                        <path fill="#FFF" fill-rule="evenodd" d="M0 1.519L1.5.185 8 5.963 14.5.185 16 1.52l-8 7.11z"></path>
+                    </svg>
+                </div>
+                <div class="main_wrapper">
+                    <section class="layout_section section_nr1">
+                        <div class="inner_section">
+                            <div class="header_heading">
+                                <h1 class="basic_h1">Our awesome rubber</h1>
+                                <h4 style="font-weight:bold;color:#fff;font-size:15pt;max-width:90%;">
+                                    Not only are the Science-Friction rubbers multifuntional, but also 
+                                    they are produced sustainable. Buy yourself a Science-Friction rubber if you feel green.</h4>
+                                <a href="contact.html?buy=true" style="width:100px;margin-top:2em;" class="read-more">Buy now!</a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="products_cubes_wrapper" id="eco">
+                        <section class="products limiter">
+                            <div class="firstHalf picture">
+                                    <div class="pic"></div>
+                            </div>
+                            <div class="secondHalf" style="background: #B7CC6A;">
+                                <div class="content_wrapper">
+                                    <h1 class="basic_h1 center">Ecological Rubber</h1>
+                                    <p class="price">9.99€</p>
+                                    <hr class="bottom-line">
+                                    <p>
+                                        The ecological rubber is an allrounder. Due to it's special Science-Friction formula it not only
+                                        erases normal pencils but also felt pents. You can erase color pencils with it aswell as just normal pencils.
+                                        Also it is made out of biodegradable caoutchouc and produced with less CO2-Emissions. 
+                                        The ecological rubber is the ideal rubber for you if you care about our enviroment as much as we do.
+                                        <br><br><br><a href="contact.html?subjectURL=I%20want%20to%20buy%20the%20ecological%20rubber!&buy=true&productid=1" id="precision" class="read-more" >Buy now!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="products limiter swap">
+                                <div class="firstHalf" style="background: #B7CC6A;">
+                                    <div class="content_wrapper">
+                                        <h1 class="basic_h1 center">Precisicion Rubber</h1>
+                                        <p class="price">12.99€</p>
+                                        <hr class="bottom-line">
+                                        <p>
+                                            The precision rubbers is for all that have higher demands. It is specially designed for architects and technicians. 
+                                            It's slim shape enables you to erase only small parts of detailed technical drawings and architecture plans. Similar to the
+                                            ecological rubber it is also produced sustainable and green. Buy yourself a precision rubber if you are a technician like I am! :)
+                                                <br><br><br><a href="contact.html?subjectURL=I%20want%20to%20buy%20the%20precision%20rubber!&buy=true&productid=1" class="read-more">Buy now!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="secondHalf picture">
+                                    <div class="pic"></div>
+                                </div>
+                        </section>
+                    </div>
+                    <section class="layout_section section_nr4" style="background:rgb(197, 214, 135);padding:2em 0em; height:100% !important;">
+                        <h1 class=" center">Customer Testimonials</h1>
+                        <div class="testimonials">
+                            <div id="slider">    
+                                <div id="sliderwrap">
+                                   <!--appendarea for my ajax-database-call script--> 
+                                </div>
+                            </div>
+                            <button style="text-decoration:underline;color:blue;text-align:center;width:100%;background:none;cursor: pointer;margin-top:3em;" onclick="popupForm()">Rate our products now!</button>
+                        </div>
+                    </section>
+                    <section class="layout_section section_nr4" id="popupForm" style="background: #778C47;">
+                        <div id="rate">
+                            <h1 class="white center">Give us your rating!</h1>
+                            <form class="contactform ratingform" action="sendTestimonial.php" method="POST" enctype="multipart/form-data">
+                                <div class="center container">
+                                    <div class="row">
+                                        <input type="radio" id="one"  required name="rate" value="1"/>
+                                        <label for="one" class="star"></label>
+                                    </div>
+                                    <div class="row">
+                                        <input id="two" type="radio" required name="rate" value="2"/>
+                                        <label for="two"class="star"></label>
+                                    </div>
+                                    <div class="row">
+                                        <input id="three" type="radio" required name="rate" value="3"/>
+                                        <label for="three" class="star"></label>
+                                    </div>
+                                    <div class="row">
+                                        <input id="four" type="radio" required name="rate" value="4"/>
+                                        <label for="four" class="star"></label>
+                                    </div>
+                                    <div class="row">
+                                        <input id="five" type="radio" required name="rate" value="5"/>
+                                        <label for="five" class="star"></label>
+                                    </div>
+                                </div>
+                                <label for="user" class="inset">Name:</label>
+                                <input class="inset" id="user" type="text" maxlength="30" required name="user"/>
+                                <label for="testimonial" class="inset" >Message:</label>
+                                <textarea rows="7" maxlength="200" required class="inset" id="testimonial" name="testimonial"></textarea>
+                                <br><br>
+                                <button class="send" type="submit">Send</button>
+                                <button class="cancel" onclick="closeForm()" type="button">Cancel</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="layout_section section_nr4" style="background:url(img/bgimg2.jpg);background-size:cover;background-attachment:fixed;">
+                        <div class="inner_section">
+                            <div id="call2action">
+                                <div class="call2action_text">
+                                    <h1>Interested in our Product?</h1><br><br>
+                                    <h2 style="color:rgb(109, 109, 109)">Then get in touch with us and buy yourself a wonderful Science-Friction rubber.</h2>
+                                </div>
+                                <div class="call2action_btn">
+                                    <br><br>
+                                    <a href="contact.html" class="read-more call2action">Go to the shop!</a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                </div>
+            </main>
+            <div class="footer_wrapper">
+                <footer>
+                    <div class="inner_footer">
+                        <div class="widget_section_wrapper">
+                            <ul class="widget_section">
+                                <li class="widget-1">
+                                    <p>Social media</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" width="50px" height="auto" alt="facebook-icon" src="img/facebook.svg"/></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img width="50px" height="auto" alt="twitter-icon" style="-webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px;" src="img/twitter-logo-button.svg"/></a></li>
+                                        <li><a href="https://www.google.com" target="_blank"><img width="50px" height="auto" alt="google-plus-icon" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;" src="img/google-plus.gif"/></a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-2">
+                                    <p>Links</p>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="products.html">About us</a></li>
+                                        <li><a href="ourteam.html">Our Team</a></li>
+                                        <li><a href="ourconcept.html">Our Concept</a></li>
+                                        <li><a href="applyNow.html">Jobs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="widget-3">
+                                    <p>Contact</p>
+                                    <ul>    
+                                        <form action="javascript:getInTouch()">
+                                            <li><input type="email" required id="getInTouchText" placeholder="Email-Address"></input></li>
+                                            <li><button type="submit" id="getInTouch">Get in Touch</button>
+                                        </form>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <div class="center">
+                                    <p class="footer_bottom_p" style="font-family: Finger Paint;">Science-Friction GmbH 2018 © All rights reserved</p>
+                                    <p class="footer_bottom_p"><a href="imprint-and-privacy-policy.html">Imprint</a>|<a href="imprint-and-privacy-policy.html">Privacy Policy</a>|<a href="contact.html">Contact</a></p>        
+                            </div>
+                        </div>
+                    </div>
+                </footer> 
+            </div>
+        </div>
+    </body>
+</html>
